@@ -1,38 +1,154 @@
-.App {
-  text-align: center;
+:root {
+  --color-1: #f44336;
+  --color-2: #e91e63;
+  --color-3: #9c27b0;
+  --color-4: #673ab7;
+  --color-5: #3f51b5;
+  --color-6: #2196f3;
+  --color-7: #03a9f4;
+  --color-8: #00bcd4;
+  --color-9: #009688;
+  --color-10: #4caf50;
+  --color-11: #8bc34a;
+  --color-12: #cddc39;
+  --color-13: #ffeb3b;
+  --color-14: #ffc107;
+  --color-15: #ff9800;
+  --color-16: #ff5722;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html, body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.holder {
+  position: absolute;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.dick {
+  position: relative;
+  width: 290px;
+  height: 104px;
 }
 
-.App-link {
-  color: #61dafb;
+.dick div {
+  border-style: solid;
+  border-color: white;
+  position: absolute;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dick.color-1 div {
+  background: var(--color-1);
+}
+
+.dick.color-2 div {
+  background: var(--color-2);
+}
+
+.dick.color-3 div {
+  background: var(--color-3);
+}
+
+.dick.color-4 div {
+  background: var(--color-4);
+}
+
+.dick.color-5 div {
+  background: var(--color-5);
+}
+
+.dick.color-6 div {
+  background: var(--color-6);
+}
+
+.dick.color-7 div {
+  background: var(--color-7);
+}
+
+.dick.color-8 div {
+  background: var(--color-8);
+}
+
+.dick.color-9 div {
+  background: var(--color-9);
+}
+
+.dick.color-10 div {
+  background: var(--color-10);
+}
+
+.dick.color-11 div {
+  background: var(--color-11);
+}
+
+.dick.color-12 div {
+  background: var(--color-12);
+}
+
+.dick.color-13 div {
+  background: var(--color-13);
+}
+
+.dick.color-14 div {
+  background: var(--color-14);
+}
+
+.dick.color-15 div {
+  background: var(--color-15);
+}
+
+.dick.color-16 div {
+  background: var(--color-16);
+}
+
+.b1, .b2 {
+  width: 50px;
+  height: 50px;
+  border-width: 2px;
+  border-radius: 100%;
+}
+
+.b1 {
+  left: 0;
+  top: 0;
+}
+
+.b2 {
+  left: 0;
+  bottom: 0;
+}
+
+.c{
+  top: 30px;
+  left: 40px;
+  width: 220px;
+  height: 40px;
+  border-width: 1px;
+  border-left: 0;
+  border-right: 0;
+}
+
+.s {
+  width: 40px;
+  height: 70px;
+  top: 16px;
+  right: 15px;
+  border-width: 2px;
+  border-radius: 0 100% 100% 0;
+  border-left: 0;
+}
+
+.l {
+  width: 24px;
+  height: 0px;
+  border-bottom: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-width: 1px;
+  top: 50px;
+  right: 15px;
 }
